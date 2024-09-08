@@ -40,8 +40,9 @@ const loginUser = async (req, res) => {
         console.log("login User");
 
         const { email, password } = req.body;
-
+        
         const user = await User.findOne({ email, password });
+        
         if (!user) {
             return res.status(404).json({ error: "User Not Found" });
         }
@@ -74,6 +75,7 @@ const loginUser = async (req, res) => {
         res.status(500).json({ error: "Internal server error" });
     }
 };
+
 
 
 

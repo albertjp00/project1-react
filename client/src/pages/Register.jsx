@@ -26,7 +26,7 @@
                 }else{
                     setData({})
                     toast.success('Login Succesfull. Welcome!')
-                    navigate('http://localhost:5000/login')
+                    navigate('/login')
                 }
             } catch (error) {
                 console.log(error);

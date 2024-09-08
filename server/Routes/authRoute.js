@@ -5,6 +5,7 @@ const {test,registerUser,loginUser,getProfile,uploadProfilePicture, getUsers, us
 
 const multer = require('multer')
 const path = require('path')
+const { authenticateToken } = require('../midddleware/auth')
 
 
 
@@ -45,7 +46,7 @@ router.post('/register',registerUser)
 
 router.post('/login',loginUser)
 
-router.get('/profile', getProfile)
+router.get('/profile',authenticateToken, getProfile)
 
 
 //ADMIN Routes ------------

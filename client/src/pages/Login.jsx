@@ -29,9 +29,9 @@
                     toast.error(data.error)
                 }else{
                     setData({ email: '', password: '' })
-                    console.log("navigate to dashboard");
+                    console.log("navigate to dashboad");
                     
-                    navigate('/login')
+                    navigate('/dashboard')
                 }
                 // console.log('Response:', response.data); // This should log "test is working"
             } catch (error) {
