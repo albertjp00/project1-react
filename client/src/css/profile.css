@@ -1,0 +1,33 @@
+/* Profile.css */
+.profile-container {
+    text-align: center;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .profile-form {
+    margin-top: 20px;
+  }
+  
+  .profile-form input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .profile-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .profile-form button:hover {
+    background-color: #45a049;
+  }
+  
